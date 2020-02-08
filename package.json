@@ -1,0 +1,22 @@
+{
+  "name": "ts-2d",
+  "version": "1.0.0",
+  "description": "2d script",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b && xcopy .\\src\\test.ts2d .\\dist /Y",
+    "parse": "ts-node src/run.ts",
+    "execute": "ts-node src/test.ts",
+    "doTheThing": "yarn parse && yarn execute",
+    "test": "test"
+  },
+  "author": "rflorian",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "typescript": "^3.7.5"
+  }
+}
